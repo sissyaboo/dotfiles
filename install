@@ -31,13 +31,15 @@ brew install \
   z \
   fd \
   go \
+  gpg \
   node \
   ncdu \
   trash \
   ripgrep \
   gnu-sed \
   prettier \
-  coreutils
+  coreutils \
+  pinentry-mac
 
 brew install --cask \
   lulu \
