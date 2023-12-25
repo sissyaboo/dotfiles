@@ -1,7 +1,7 @@
 [user]
   name = sissyaboo
   email = a@sissyaboo.com
-	signingkey = ~/.ssh/git.pub
+	signingkey = BB84F41BF8280D8E
 [init]
 	defaultBranch = main
 [core]
@@ -9,7 +9,7 @@
 	excludesfile = ~/.dotfiles/.gitignore
 [push]
 	autoSetupRemote = true
-[gpg]
-	format = ssh
 [commit]
 	gpgsign = true
+[gpg]
+	program = gpg
