@@ -2,7 +2,7 @@
 TERM = "alacritty-direct"
 
 [font]
-size = 22.0
+size = 18.0
 
 bold.family = "SFMono Nerd Font"
 bold.style = "Bold"
