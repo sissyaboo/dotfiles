@@ -1,0 +1,66 @@
+[env]
+TERM = "alacritty-direct"
+
+[font]
+size = 22.0
+
+bold.family = "SFMono Nerd Font"
+bold.style = "Bold"
+bold_italic.family = "SFMono Nerd Font"
+bold_italic.style = "Bold Italic"
+italic.family = "SFMono Nerd Font"
+italic.style = "Medium Italic"
+normal.family = "SFMono Nerd Font"
+normal.style = "Medium"
+
+[mouse]
+hide_when_typing = true
+
+[selection]
+save_to_clipboard = true
+
+[window]
+title = "∞"
+dynamic_padding = true
+resize_increments = true
+option_as_alt = "OnlyRight"
+
+dimensions.columns = 122
+dimensions.lines = 32
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+primary.background = "0x1e1e2e"
+primary.foreground = "0xcdd6f4"
+
+normal.black = "0x45475a"
+normal.red = "0xf38ba8"
+normal.green = "0xa6e3a1"
+normal.yellow = "0xf9e2af"
+normal.blue = "0x89b4fa"
+normal.magenta = "0xf5c2e7"
+normal.cyan = "0x94e2d5"
+normal.white = "0xbac2de"
+
+bright.black = "0x585b70"
+bright.red = "0xf38ba8"
+bright.green = "0xa6e3a1"
+bright.yellow = "0xf9e2af"
+bright.blue = "0x89b4fa"
+bright.magenta = "0xf5c2e7"
+bright.cyan = "0x94e2d5"
+bright.white = "0xa6adc8"
+
+search.matches.foreground = "0x1e1e2e"
+search.matches.background = "0xa6adc8"
+search.focused_match.foreground = "0x1e1e2e"
+search.focused_match.background = "0xa6e3a1"
+
+hints.start.foreground = "0x1e1e2e"
+hints.start.background = "0xf9e2af"
+hints.end.foreground = "0x1e1e2e"
+hints.end.background = "0xa6adc8"
+
+selection.text = "0xbac2de"
+selection.background = "0x45475a"

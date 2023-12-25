@@ -1,0 +1,54 @@
+add_newline = false
+
+format = """
+$username\
+$time\
+$sudo\
+$git_branch\
+$line_break\
+$directory\
+$cmd_duration\
+$jobs\
+$character"""
+
+[character]
+success_symbol = '[](bold green)'
+error_symbol = '[](bold red)'
+vimcmd_symbol = '[](bold yellow)'
+vimcmd_replace_one_symbol = '[](bold red)'
+vimcmd_replace_symbol = '[](bold red)'
+vimcmd_visual_symbol = '[](bold purple)'
+
+[directory]
+truncation_symbol = '…/'
+read_only = ' '
+style = 'blue'
+
+[sudo]
+disabled = false
+symbol = ''
+
+[jobs]
+symbol = ' '
+
+[cmd_duration]
+format = '[$duration]($style) '
+min_time = 500
+
+[time]
+disabled = false
+style = '8'
+format = '[$time ]($style)'
+
+[username]
+style_user = '8'
+style_root = 'cyan bold'
+format = '[\($user\)  ]($style)'
+show_always = true
+
+[hostname]
+style = 'yellow'
+
+[git_branch]
+format = '[ $symbol$branch(:$remote_branch)](8 bold) '
+symbol = " "

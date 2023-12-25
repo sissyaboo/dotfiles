@@ -1,0 +1,15 @@
+[user]
+  name = sissyaboo
+  email = a@sissyaboo.com
+	signingkey = ~/.ssh/git.pub
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+	excludesfile = ~/.dotfiles/.gitignore
+[push]
+	autoSetupRemote = true
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true

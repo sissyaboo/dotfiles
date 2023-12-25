@@ -1,0 +1,72 @@
+#!/usr/bin/env bash
+
+COMPUTER_NAME="aboo"
+
+ln -sfv "$HOME/.dotfiles/.zshrc" ~
+ln -sfv "$HOME/.dotfiles/.gitconfig" ~
+ln -sfv "$HOME/.dotfiles/.alacritty.toml" ~
+ln -sfv "$HOME/.dotfiles/.nvim" "$HOME/.config/nvim"
+
+cp "$HOME/.dotfiles/.config/config" "$HOME/.ssh/"
+
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setloggingmode on
+sudo pkill -HUP socketfilterfw
+
+sudo networksetup -setdnsservers "Wi-Fi" 1.1.1.1 1.0.0.1
+
+sudo scutil --set ComputerName "$COMPUTER_NAME"
+sudo scutil --set HostName "$COMPUTER_NAME"
+sudo scutil --set LocalHostName "$COMPUTER_NAME"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$COMPUTER_NAME"
+
+xcode-select --install
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew tap beeftornado/rmtree
+brew tap homebrew/cask-versions
+
+brew install \
+  z \
+  fd \
+  go \
+  node \
+  ncdu \
+  trash \
+  ripgrep \
+  gnu-sed \
+  prettier \
+  coreutils
+
+brew install --cask \
+  lulu \
+  figma \
+  steam \
+  discord \
+  spotify \
+  openphone \
+  oversight \
+  gog-galaxy \
+  battle-net \
+  mimestream \
+  macs-fan-control \
+  google-chrome-beta
+
+defaults write com.apple.dock magnification -bool true
+defaults write com.apple.dock tilesize -string "46"
+defaults write com.apple.dock autohide-delay -int 0
+defaults write com.apple.dock autohide-time-modifier -float 0.4
+defaults write com.apple.Safari HomePage -string ""
+defaults write com.apple.Safari AutoOpenSafeDownloads -bool true
+defaults write com.apple.Safari DownloadsClearingPolicy -int 1
+defaults write com.apple.Safari ShowOverlayStatusBar -bool true
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+defaults write com.apple.finder ShowStatusBar -bool true
+defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling"
+defaults write NSGlobalDomain AppleMenuBarFontSize -string "large"
+defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
+killall Dock
