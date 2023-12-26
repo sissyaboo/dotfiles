@@ -107,8 +107,8 @@ alias gp="git pull"
 alias gl="git log"
 alias gg='git push -u origin'
 alias ga='git add -A'
-alias gm='git commit -av'
-alias gmm='git commit -am'
+alias gm='git commit -Sav'
+alias gmm='git commit -Sam'
 alias gd='git diff'
 
 autoload -Uz compinit
