@@ -1,7 +1,7 @@
 [user]
   name = Sissy Aboo
   email = a@sissyaboo.com
-	signingkey = ~/.ssh/git.pub
+	signingkey = ~/.ssh/sign.pub
 [init]
 	defaultBranch = main
 [core]
