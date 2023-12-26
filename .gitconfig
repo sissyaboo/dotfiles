@@ -1,7 +1,6 @@
 [user]
-  name = sissyaboo
+  name = Sissy Aboo
   email = a@sissyaboo.com
-	signingkey = BB84F41BF8280D8E
 [init]
 	defaultBranch = main
 [core]
@@ -9,7 +8,3 @@
 	excludesfile = ~/.dotfiles/.gitignore
 [push]
 	autoSetupRemote = true
-[commit]
-	gpgsign = true
-[gpg]
-	program = gpg

@@ -13,9 +13,6 @@ italic.style = "Medium Italic"
 normal.family = "SFMono Nerd Font"
 normal.style = "Medium"
 
-[mouse]
-hide_when_typing = true
-
 [selection]
 save_to_clipboard = true
 

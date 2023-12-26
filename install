@@ -31,15 +31,17 @@ brew install \
   z \
   fd \
   go \
-  gpg \
   node \
   ncdu \
   trash \
+  neovim \
   ripgrep \
   gnu-sed \
   prettier \
+  starship \
   coreutils \
-  pinentry-mac
+  zsh-autosuggestions \
+  zsh-fast-syntax-highlighting
 
 brew install --cask \
   lulu \
